@@ -26,8 +26,6 @@ enum layers {
 #define MO_FNCS MO(_FNCS) // hold to access fn layer
 // #define OS_LSFT OSM(MOD_LSFT)
 // #define OS_RSFT OSM(MOD_RSFT)
-#define MO_LSFT MO(MOD_LSFT)
-#define MO_RSFT MO(MOD_RSFT)
 
 /*
  * on thumb keys, need:
@@ -50,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_7,                      KC_VOLU, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
     KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    _______,                   KC_VOLD, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_BSLS,
     KC_CAPS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    _______,                   KC_RALT, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
-    KC_LSFT, KC_LCTL, MO_FNCS, KC_LGUI, KC_LALT, KC_SPC,  MO_LSFT, KC_ENT,  KC_BSPC, MO_RSFT, MO_FNCS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RSFT
+    KC_LSFT, KC_LCTL, MO_FNCS, KC_LGUI, KC_LALT, KC_SPC,  KC_LSFT, KC_ENT,  KC_BSPC, KC_RSFT, MO_FNCS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RSFT
   ),
 
   [_FNCS] = LAYOUT(
